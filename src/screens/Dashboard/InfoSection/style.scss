@@ -30,21 +30,19 @@
         padding: 2.5rem 1.5rem;
         text-align: left;
       }
-      h2 {
-        font-size: 2rem;
+      .title {
+        font-size: $m-heading;
       }
-      p {
-        font-size: 1rem;
+      .description {
         padding-top: 0.75rem;
       }
-      a {
+      .link {
         position: absolute;
         bottom: 5rem;
-        left: 1rem;
+        left: 1.5rem;
         display: block;
         text-decoration: none;
         cursor: pointer;
-        font-size: 1rem;
         padding-top: 2rem;
         color: $black;
       }
@@ -62,7 +60,7 @@
 
       .card {
         position: inherit;
-        a {
+        .link {
           position: inherit;
         }
       }
@@ -100,12 +98,12 @@
     flex: 4.3;
     padding: 4rem 3rem 1rem;
     text-align: left;
-    h2 {
-      font-size: 2.2rem;
+    .title {
       margin-bottom: 1rem;
+      font-size: $m-heading;
     }
-    p {
-      font-size: 1.2rem;
+    .description {
+      font-size: 1.1rem;
     }
   }
 }

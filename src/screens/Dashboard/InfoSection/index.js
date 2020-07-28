@@ -62,9 +62,9 @@ const SectionOneItem = ({ title, description, imageUrl }) => (
     style={{ backgroundImage: `url(${imageUrl})` }}>
     <div className="card">
       <div className="content-container">
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <a href="#">{'Learn More \u8594'}</a>
+        <h2 className="title">{title}</h2>
+        <p className="description">{description}</p>
+        <a href="#" className="link">{'Learn More \u8594'}</a>
       </div>
     </div>
   </div>
@@ -77,8 +77,8 @@ const SectionTwoItem = ({ title, description, imageUrl }) => (
       <img src={imageUrl} alt="test" />
     </div>
     <div className="content-container">
-      <h2>{title}</h2>
-      <p>{description}</p>
+      <h2 className="title">{title}</h2>
+      <p className="description">{description}</p>
     </div>
   </div>
 );
