@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
 $primary-green-light: #57AF7E;
 $primary-green-dark: #224A34;
 $darkest-green: #191F1C;
@@ -7,5 +10,5 @@ $white: #ffffff;
 $l-heading: 3rem;
 $m-heading: 2rem;
 $paragraph: 1rem;
-$ContoraOne: 'Cantora One';
-$Robato: 'Robato'
+$font-primary: 'Playfair Display', serif;
+$font-secondary: 'Roboto', sans-serif;

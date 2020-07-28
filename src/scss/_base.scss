@@ -12,7 +12,7 @@ body {
   font-weight: normal;
   font-size: $paragraph;
   color: $darkest-green;
-  font-family: $Robato, sans-serif;
+  font-family: $font-secondary;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,5 +20,5 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $ContoraOne, sans-serif;
+  font-family: $font-primary, sans-serif;
 }

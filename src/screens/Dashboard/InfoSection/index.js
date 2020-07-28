@@ -64,7 +64,7 @@ const SectionOneItem = ({ title, description, imageUrl }) => (
       <div className="content-container">
         <h2 className="title">{title}</h2>
         <p className="description">{description}</p>
-        <a href="#" className="link">{'Learn More \u8594'}</a>
+        <a href="#link" className="link">{`Learn More \u2192`}</a>
       </div>
     </div>
   </div>
