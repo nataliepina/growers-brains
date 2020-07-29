@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/GrowersBrains/static/css/main.a8ba28e6.chunk.css",
+    "main.js": "/GrowersBrains/static/js/main.d44d6cf4.chunk.js",
+    "main.js.map": "/GrowersBrains/static/js/main.d44d6cf4.chunk.js.map",
+    "runtime-main.js": "/GrowersBrains/static/js/runtime-main.cbf5ca97.js",
+    "runtime-main.js.map": "/GrowersBrains/static/js/runtime-main.cbf5ca97.js.map",
+    "static/js/2.215003fb.chunk.js": "/GrowersBrains/static/js/2.215003fb.chunk.js",
+    "static/js/2.215003fb.chunk.js.map": "/GrowersBrains/static/js/2.215003fb.chunk.js.map",
+    "index.html": "/GrowersBrains/index.html",
+    "precache-manifest.06ff7cfb2d8a623c88eb7a683e8a1874.js": "/GrowersBrains/precache-manifest.06ff7cfb2d8a623c88eb7a683e8a1874.js",
+    "service-worker.js": "/GrowersBrains/service-worker.js",
+    "static/css/main.a8ba28e6.chunk.css.map": "/GrowersBrains/static/css/main.a8ba28e6.chunk.css.map",
+    "static/js/2.215003fb.chunk.js.LICENSE.txt": "/GrowersBrains/static/js/2.215003fb.chunk.js.LICENSE.txt",
+    "static/media/bestReviewed.jpg": "/GrowersBrains/static/media/bestReviewed.884e0ba8.jpg",
+    "static/media/contest.jpg": "/GrowersBrains/static/media/contest.544a4d95.jpg",
+    "static/media/dailyGrow.jpg": "/GrowersBrains/static/media/dailyGrow.9c01ed45.jpg",
+    "static/media/style.scss": "/GrowersBrains/static/media/greenhouse.ccbe5658.jpg",
+    "static/media/howTo.jpg": "/GrowersBrains/static/media/howTo.28ba59f9.jpg",
+    "static/media/ranking.jpg": "/GrowersBrains/static/media/ranking.fe4645f3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbf5ca97.js",
+    "static/js/2.215003fb.chunk.js",
+    "static/css/main.a8ba28e6.chunk.css",
+    "static/js/main.d44d6cf4.chunk.js"
+  ]
+}
