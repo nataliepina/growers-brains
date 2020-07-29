@@ -1,0 +1,132 @@
+@import "../../../scss/variables";
+@import "../../../scss/_base";
+
+#sectionOne {
+  display: flex;
+  margin: 4% 5%;
+  justify-content: space-between;
+
+  .sectionOne-item {
+    width: 30%;
+    background: url('../assets/greenhouse.jpg') no-repeat center center/cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+      width: 70%;
+      height: 70%;
+      background: $white;
+      overflow: hidden;
+      border: 1px solid $black;
+      position: relative;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .content-container{
+        padding: 2.5rem 1.5rem;
+        text-align: left;
+      }
+      .title {
+        font-size: $m-heading;
+      }
+      .description {
+        padding-top: 0.75rem;
+      }
+      .link {
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        padding-top: 2rem;
+        color: $black;
+        position: absolute;
+        bottom: 15px;
+        left: 24px;
+      }
+    }
+  }
+}
+
+/* mobile and tablets */
+@media (max-width: 768px) {
+  #sectionOne {
+    flex-direction: column;
+
+    .sectionOne-item {
+      width: 100%;
+
+      .card {
+        position: inherit;
+        .link {
+          position: inherit;
+        }
+      }
+    }
+  }
+  
+  #sectionOne .sectionOne-item + .sectionOne-item {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Info item 2 */
+.sectionTwo-item {
+  display: flex;
+  padding: 2rem;
+
+  .imgContainer {
+    flex: 5.7;
+    position: relative;
+    img {
+      height: 360px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content-container {
+    flex: 4.3;
+    padding: 4rem 3rem 1rem;
+    text-align: left;
+    .title {
+      margin-bottom: 1rem;
+      font-size: $m-heading;
+    }
+    .description {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+#sectionTwo *:nth-child(2) {
+  flex-direction: row-reverse;
+  .content-container {
+    padding-left: 0;
+  }
+}
+
+
+/* mobile and tablets */
+@media (max-width: 768px) {
+  .sectionTwo-item {
+    display: flex;
+  
+    .imgContainer {
+      display: none;
+    }
+    .content-container {
+      border: 1px solid $primary-green-light;
+      text-align: center;
+      margin: 24px;
+    }
+  }
+}

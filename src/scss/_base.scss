@@ -1,0 +1,24 @@
+@import "../../../scss/variables";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: normal;
+  font-size: $paragraph;
+  color: $darkest-green;
+  font-family: $font-secondary;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary, sans-serif;
+}
