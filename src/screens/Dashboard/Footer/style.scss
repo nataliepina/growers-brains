@@ -1,0 +1,91 @@
+@import "../../../scss/variables";
+@import "../../../scss/_base";
+
+// * {
+//   border: 1px solid #f3f3f3;
+// }
+
+
+#footer {
+  background: $lightest-green;
+
+  .top {
+    display: flex;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    .contactText {
+      flex: 1;
+      text-align: start;
+      font-weight: bold;
+    }
+
+    .contactInfo {
+      flex: 5;
+      text-align: start;
+    }
+
+    .title {
+      text-align: start;
+      flex: 5;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .contact {
+      flex: 1.5;
+      border: none;
+      background: $darkest-green;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: $paragraph;
+    }
+  }
+
+  .h-line {
+    height: 0.5px;
+    background-color: $darkest-green
+  }
+
+  .bottom {
+    display: flex;
+    margin-top: 0.75rem;
+    justify-content: space-between;
+    align-self: flex-start;
+
+    .bottomLeft {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .footerList {
+        list-style: none;
+        align-self: flex-start;
+        display: flex;
+
+        li button {
+          border: none;
+          background-color: $lightest-green;
+          margin-right: 3.5rem;
+          cursor: pointer;
+        }
+      }
+
+      .copyright {
+        padding-top: 2rem;
+        text-align: start;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .socialIcons {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+}

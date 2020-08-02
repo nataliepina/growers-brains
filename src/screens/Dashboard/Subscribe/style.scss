@@ -1,0 +1,58 @@
+@import "../../../scss/variables";
+@import "../../../scss/_base";
+
+#subscribe {
+  position: relative;
+  margin: 2rem 0;
+  display: block;
+
+  .content { 
+    position: absolute;
+    z-index: 1;
+    top: 12rem;
+    left: 9rem;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-size: 2.5rem;
+      font-family: $font-primary;
+    }
+
+    .inputContainer {
+      display: flex;
+      margin-top: 2rem;
+      max-width: 35rem;
+      border: 2.5px solid $primary-green-dark;
+
+      .inputEmail {
+        flex: 3;
+        padding: 1.5rem;
+        border: none;
+        color: $primary-green-dark;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .subscribeBtn {
+        flex: 1.5;
+        border: none;
+        background: $primary-green-dark;
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+    }
+
+
+  }
+
+  .ellipsis {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+}
