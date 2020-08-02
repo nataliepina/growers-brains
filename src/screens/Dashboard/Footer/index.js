@@ -1,4 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebook, faLinkedin, faInstagram, faTwitter, faYoutube
+} from "@fortawesome/free-brands-svg-icons";
 import './style.scss';
 
 export default () => (
@@ -24,7 +28,13 @@ export default () => (
           <p className="copyright"><span dangerouslySetInnerHTML={{ "__html": "&copy;" }} />2020 Growers Brains</p>
         </div>
         <div className="socialIcons">
-          Social Icons
+          <ul>
+            <li><button><FontAwesomeIcon icon={faFacebook} size="lg" /></button></li>
+            <li><button><FontAwesomeIcon icon={faLinkedin} size="lg" /></button></li>
+            <li><button><FontAwesomeIcon icon={faTwitter} size="lg" /></button></li>
+            <li><button><FontAwesomeIcon icon={faYoutube} size="lg" /></button></li>
+            <li><button><FontAwesomeIcon icon={faInstagram} size="lg" /></button></li>
+          </ul>
         </div>
       </div>
     </div>

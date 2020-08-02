@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <>
       <InfoSection />
-      {/* <Subscribe /> */}
+      <Subscribe />
       <Footer />
     </>
   );
