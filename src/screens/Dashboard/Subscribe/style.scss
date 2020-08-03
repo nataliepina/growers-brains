@@ -1,7 +1,7 @@
 @import "../../../scss/variables";
 @import "../../../scss/_base";
 
-#subscribe {
+.subscribe {
   position: relative;
   margin: 2rem 0;
   height: 600px;
@@ -19,13 +19,13 @@
       font-family: $font-primary;
     }
 
-    .inputContainer {
+    .input-container {
       display: flex;
       margin-top: 2rem;
       max-width: 35rem;
       border: 2.5px solid $primary-green-dark;
 
-      .inputEmail {
+      .input-email {
         flex: 3;
         padding: 1.5rem;
         border: none;
@@ -34,7 +34,7 @@
         font-weight: bold;
       }
 
-      .subscribeBtn {
+      .subscribe-btn {
         flex: 1.5;
         border: none;
         background: $primary-green-dark;
@@ -42,6 +42,10 @@
         font-size: 1.1rem;
         font-weight: bold;
         cursor: pointer;
+
+        &:hover {
+          background: $primary-green-light;
+        }
       }
 
     }

@@ -6,8 +6,9 @@
 // }
 
 
-#footer {
+.footer {
   background: $lightest-green;
+  padding: 0 2rem;
 
   .top {
     display: flex;
@@ -15,13 +16,13 @@
     padding-top: 4rem;
     padding-bottom: 2rem;
 
-    .contactText {
+    .contact-text {
       flex: 1;
       text-align: start;
       font-weight: bold;
     }
 
-    .contactInfo {
+    .contact-info {
       flex: 5;
       text-align: start;
     }
@@ -54,12 +55,12 @@
     justify-content: space-between;
     align-self: flex-start;
 
-    .bottomLeft {
+    .bottom-left {
       flex: 1;
       display: flex;
       flex-direction: column;
 
-      .footerList {
+      .footer-list {
         list-style: none;
         align-self: flex-start;
         display: flex;
@@ -81,22 +82,26 @@
       }
     }
 
-    .socialIcons {
+    .social-icons {
       flex: 1;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
 
-      ul {
+      .social-list__items {
         list-style: none;
         display: flex;
 
-        button {
+        .social-list__link {
           border: none;
-          background-color: $lightest-green;
+          color: $darkest-green;
           margin-left: 2.5rem;
           cursor: pointer;
+
+          &:hover {
+            color: $primary-green-dark;
+          }  
         }
       }
     }
