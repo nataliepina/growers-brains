@@ -44,13 +44,11 @@
         cursor: pointer;
 
         &:hover {
-          background: $primary-green-light;
+          background: $darkest-green;
         }
       }
 
     }
-
-
   }
 
   .ellipsis {
@@ -58,5 +56,29 @@
     left: 0;
     top: 0;
     z-index: 0;
+  }
+}
+
+/* mobile and tablets */
+@media (max-width: 768px) {
+  .subscribe {
+    position: static;
+    height: 200px;
+
+    .content {
+      position: static;
+
+      .input-container {
+        align-self: center;
+
+        .subscribe-btn {
+          padding: 0 2rem;
+        }
+      }
+    }
+
+    .ellipsis {
+      display: none;
+    }
   }
 }

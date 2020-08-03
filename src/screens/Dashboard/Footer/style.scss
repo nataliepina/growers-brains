@@ -41,6 +41,10 @@
       color: #ffffff;
       cursor: pointer;
       font-size: $paragraph;
+
+      &:hover {
+        background: $primary-green-dark;
+      }
     }
   }
 
@@ -96,13 +100,35 @@
         .social-list__link {
           border: none;
           color: $darkest-green;
-          margin-left: 2.5rem;
           cursor: pointer;
 
           &:hover {
             color: $primary-green-dark;
           }  
         }
+
+        .social-list__item + .social-list__item {
+          margin-left: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* mobile and tablets */
+@media (max-width: 768px) {
+  .footer {
+    .title {
+      display: none;
+    }
+
+    .bottom {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .bottom-left {
+        margin-top: 1rem;
+        align-self: flex-start;
       }
     }
   }
