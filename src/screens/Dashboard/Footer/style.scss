@@ -36,6 +36,7 @@
       color: #ffffff;
       cursor: pointer;
       font-size: $paragraph;
+      font-family: $font-secondary;
 
       &:hover {
         background: $primary-green-dark;
@@ -113,6 +114,10 @@
 /* mobile and tablets */
 @media (max-width: 768px) {
   .footer {
+    .contact {
+      display: none;
+    }
+    
     .title {
       display: none;
     }

@@ -119,14 +119,17 @@
 @media (max-width: 768px) {
   .sectionTwo-item {
     display: flex;
+    flex-direction: column;
   
     .imgContainer {
-      display: none;
+      display: block;
     }
+  }
+
+  #sectionTwo *:nth-child(2) {
+    flex-direction: column;
     .content-container {
-      border: 1px solid $primary-green-light;
-      text-align: center;
-      margin: 24px;
+      padding: 4rem 3rem 1rem;
     }
   }
 }
