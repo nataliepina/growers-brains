@@ -9,16 +9,19 @@ import './style.scss';
 
 const sectionOne = [
   {
+    id: 1,
     title: 'Green House',
     description: 'A locker of all the plants a person is growing with data of the daily processes including time-lapse generators,',
     imageUrl: greenhouseImg
   },
   {
+    id: 2,
     title: 'Contest',
     description: 'Daily, weekly and monthly competitions will be help for growers of various categories.',
     imageUrl: contestImg
   },
   {
+    id: 3,
     title: 'Growers Ranking',
     description: 'Ranking of the best growers in the world, who can help with the one on one consulting.',
     imageUrl: rankingImg
@@ -27,16 +30,19 @@ const sectionOne = [
 
 const sectionTwo = [
   {
+    id: 1,
     title: 'How-To Articles From Top Growers',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, id ipsam. Quasi explicabo necessitatibus quas, neque id minus quibusdam itaque earum, placeat officiis ab corporis, consequuntur eius iste nulla illo',
     imageUrl: howToImg
   },
   {
+    id: 2,
     title: 'Best Reviewed Products',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, id ipsam. Quasi explicabo necessitatibus quas, neque id minus quibusdam itaque earum, placeat officiis ab corporis, consequuntur eius iste nulla illo',
     imageUrl: bestReviewedImg
   },
   {
+    id: 3,
     title: 'Daily Grow Updates',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, id ipsam. Quasi explicabo necessitatibus quas, neque id minus quibusdam itaque earum, placeat officiis ab corporis, consequuntur eius iste nulla illo',
     imageUrl: dailyGrowImg
@@ -47,10 +53,10 @@ export default() => {
   return (
     <>
       <section id="sectionOne">
-        {sectionOne.map(item => <SectionOneItem {...item} />)}
+        {sectionOne.map(item => <SectionOneItem key={item.id} {...item} />)}
       </section>
       <section id="sectionTwo" className="container">
-        {sectionTwo.map(item => <SectionTwoItem {...item} />)}
+        {sectionTwo.map(item => <SectionTwoItem key={item.id} {...item} />)}
       </section>
     </>
   );

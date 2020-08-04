@@ -62,16 +62,24 @@
 @media (max-width: 768px) {
   .subscribe {
     position: static;
-    height: 200px;
+    height: 100px;
 
     .content {
       position: static;
 
+      .title {
+        font-size: 1.75rem;
+      }
+
       .input-container {
-        align-self: center;
+        margin: 2rem auto;
+
+        .input-email {
+          padding: 0.75rem;
+        }
 
         .subscribe-btn {
-          padding: 0 2rem;
+          padding: 0 1rem;
         }
       }
     }
