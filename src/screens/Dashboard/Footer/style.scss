@@ -1,0 +1,135 @@
+@import "../../../scss/variables";
+@import "../../../scss/_base";
+
+.footer {
+  background: $lightest-green;
+  padding: 0 2rem;
+
+  .top {
+    display: flex;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    .contact-text {
+      flex: 1;
+      text-align: start;
+      font-weight: bold;
+    }
+
+    .contact-info {
+      flex: 5;
+      text-align: start;
+    }
+
+    .title {
+      text-align: start;
+      flex: 5;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .contact {
+      flex: 1.5;
+      border: none;
+      background: $darkest-green;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: $paragraph;
+      font-family: $font-secondary;
+
+      &:hover {
+        background: $primary-green-dark;
+      }
+    }
+  }
+
+  .h-line {
+    height: 0.5px;
+    background-color: $darkest-green
+  }
+
+  .bottom {
+    display: flex;
+    margin-top: 0.75rem;
+    justify-content: space-between;
+    align-self: flex-start;
+
+    .bottom-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .footer-list {
+        list-style: none;
+        align-self: flex-start;
+        display: flex;
+
+        li button {
+          border: none;
+          background-color: $lightest-green;
+          margin-right: 3.5rem;
+          cursor: pointer;
+        }
+      }
+
+      .copyright {
+        padding-top: 2rem;
+        text-align: start;
+        font-weight: bold;
+        font-size: 14px;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .social-icons {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      .social-list__items {
+        list-style: none;
+        display: flex;
+
+        .social-list__link {
+          border: none;
+          color: $darkest-green;
+          cursor: pointer;
+
+          &:hover {
+            color: $primary-green-dark;
+          }  
+        }
+
+        .social-list__item + .social-list__item {
+          margin-left: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* mobile and tablets */
+@media (max-width: 768px) {
+  .footer {
+    .contact {
+      display: none;
+    }
+    
+    .title {
+      display: none;
+    }
+
+    .bottom {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .bottom-left {
+        margin-top: 1rem;
+        align-self: flex-start;
+      }
+    }
+  }
+}
