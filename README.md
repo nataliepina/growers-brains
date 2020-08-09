@@ -7,6 +7,7 @@ GrowersBrains is an app designed to solve the problems that growers are globally
 
 ### How To Contribute
 
+* Once you are added as a contributor
 - Clone the repository
 - Be sure to pull down the latest changes before creating your branch `git pull` 
 - Create your branch `git checkout -b <YOUR-BRANCH-NAME>` (Ex: `git checkout -b feature/nav-bar`) (Feel free to prefix your branches with feature or bugfix)
