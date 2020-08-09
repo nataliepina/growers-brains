@@ -16,7 +16,7 @@ const Login = () => {
                 <form>
                     <input className="form-input inputter" type="text" id="fname" name="Email" placeholder="Email..." />
                     <div className="password inputter">
-                        <button className="comment">Forgot password?</button>
+                        <button className="comment">Forgot Password?</button>
                         <input className="form-input" type="text" id="lname" name="Password" placeholder="Password..." />
                     </div>
                     <button className="form-input submit" type="submit" >Let's Grow!</button>
