@@ -1,0 +1,64 @@
+@import "../../../scss/variables";
+@import "../../../scss/_base";
+
+.login {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10rem 20%;
+    grid-column-gap: 5%;
+    .left-image {
+        max-width: 100%;
+        width: 30rem;
+        height: auto;
+    }
+    .login-card {
+        display: grid;
+        padding: 0 10%;
+        border: 3px solid;
+        border-color: $lightest-green;
+        .header {
+            margin: 1rem 0 0 0;
+        }
+        .inputter {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .form-input {
+            line-height: 3rem;
+            border-style: solid;
+            border-color: $lightest-green;
+            width: 95%;
+            padding-left: 5%;
+        }
+        .password {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+           
+        }
+        .comment {
+            border: none;
+            background: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .submit {
+            background-color: $primary-green-dark;
+            color: white;
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .login {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+
+
