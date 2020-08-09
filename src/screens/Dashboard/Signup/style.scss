@@ -1,0 +1,67 @@
+@import '../../../scss/variables';
+@import '../../../scss/_base';
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2em;
+  max-width: 960px;
+  margin: 3em auto;
+}
+
+form > h1 {
+  margin-bottom: 0.5em;
+}
+
+.form-container {
+  border: 2px solid $lightest-green;
+  overflow: hidden;
+  padding: 0 2em;
+}
+
+.form-group {
+  width: 80%;
+  max-width: 350px;
+  margin: 2rem auto;
+}
+
+input {
+  width: 100%;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1em;
+  margin-bottom: 0.75em;
+  color: $lightest-green;
+  border: 1px solid $lightest-green;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn-dark {
+  background: $primary-green-dark;
+  color: #ffffff;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: $primary-green-dark;
+  border: 1px solid $primary-green-dark;
+}
+
+.signup-text {
+  color: $primary-green-dark;
+}
+
+::placeholder {
+  color: $primary-green-dark;
+  opacity: 1;
+}
