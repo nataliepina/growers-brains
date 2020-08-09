@@ -7,12 +7,14 @@ import './App.scss';
 import Dashboard from './screens/Dashboard';
 import Login from './screens/Dashboard/Login';
 import Footer from './screens/Dashboard/Footer';
+import Header from './screens/Dashboard/Header';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <Router history={history}>
+            <Header />
             <Switch>
                 <Route path="/" exact component={Dashboard} />
                 <Route path="/login" exact component={Login} />

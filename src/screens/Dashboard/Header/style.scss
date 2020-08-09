@@ -1,0 +1,80 @@
+@import "../../../scss/variables";
+@import "../../../scss/_base";
+
+.pointer {
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    height: 56px;
+}
+
+.navbar__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.navbar__logo {
+    margin-left: 1rem;
+}
+
+.navbar__logo a {
+    color: $darkest-green;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.navbar_navigation-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar_navigation-items li {
+    padding: 0 0.5rem;
+}
+
+.navbar_navigation-items a {
+    color: $darkest-green;
+    text-decoration: none;
+}
+
+.navbar_navigation-items a:hover,
+.navbar_navigation-items:active {
+    color: $darkest-green;
+}
+
+.navbar__link--active {
+    border-bottom: 3px solid $darkest-green;
+    transition: border-bottom .5s ease-in-out;
+}
+
+.signin-up {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+
+.sign-button {
+    background: transparent;
+    border: none;
+    display: flex;
+    margin: 0 2rem;  
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: $primary-green-dark;
+    color: white;
+}
