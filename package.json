@@ -2,6 +2,7 @@
   "name": "growers-brains",
   "homepage": "https://nataliepina.github.io/GrowersBrains",
   "version": "0.1.0",
+  "description": "information for growers around the world",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -25,6 +26,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "keywords": [
+    "growers",
+    "plants",
+    "gardening",
+    "react",
+    "scss",
+    "growers brains",
+    "farming",
+    "planting"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
