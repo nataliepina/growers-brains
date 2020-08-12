@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.scss';
-import plantImg from '../../../public/assets/pexels-kaboompics-com-6414.jpg';
+import plantImg from './assets/growing.jpg';
 
 const Signup = () => {
   const [user, setUser] = useState({
