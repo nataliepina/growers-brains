@@ -17,40 +17,79 @@ export default () => (
       <div className="bottom">
         <div className="bottom-left">
           <ul className="footer-list">
-            <li><button href="#">Help</button></li>
-            <li><button href="#">Terms</button></li>
-            <li><button href="#">Privacy Policy</button></li>
+            <li>
+              <button href="#">Help</button>
+            </li>
+            <li>
+              <button href="#">Terms</button>
+            </li>
+            <li>
+              <button href="#">Privacy Policy</button>
+            </li>
           </ul>
-          <p className="copyright"><span dangerouslySetInnerHTML={{ "__html": "&copy;" }} />2020 Growers Brains</p>
+          <p className="copyright">
+            <span dangerouslySetInnerHTML={{ __html: '&copy;' }} />
+            2020 Growers Brains
+          </p>
         </div>
         <div className="social-icons">
           <ul className="social-list__items">
             <li className="social-list__item">
-              <a href="http://facebook.com" aria-hidden="true" className="social-list__link" rel="noopener" alt="go to Instagram">
+              <a
+                href="http://facebook.com"
+                aria-hidden="true"
+                className="social-list__link"
+                rel="noopener"
+                alt="go to Instagram"
+              >
                 <span className="sr-only">Opens new window</span>
                 <i className="fab fa-facebook fa-2x"></i>
               </a>
             </li>
             <li className="social-list__item">
-              <a href="http://linkedin.com" aria-hidden="true" className="social-list__link" rel="noopener" alt="go to LinkedIn">
+              <a
+                href="http://linkedin.com"
+                aria-hidden="true"
+                className="social-list__link"
+                rel="noopener"
+                alt="go to LinkedIn"
+              >
                 <span className="sr-only">Opens new window</span>
                 <i className="fab fa-linkedin fa-2x"></i>
               </a>
             </li>
             <li className="social-list__item">
-              <a href="http://twitter.com" aria-hidden="true" className="social-list__link" rel="noopener" alt="go to Twitter">
+              <a
+                href="http://twitter.com"
+                aria-hidden="true"
+                className="social-list__link"
+                rel="noopener"
+                alt="go to Twitter"
+              >
                 <span className="sr-only">Opens new window</span>
                 <i className="fab fa-twitter fa-2x"></i>
               </a>
             </li>
             <li className="social-list__item">
-              <a href="http://youtube.com" aria-hidden="true" className="social-list__link" rel="noopener" alt="go to Youtube">
+              <a
+                href="http://youtube.com"
+                aria-hidden="true"
+                className="social-list__link"
+                rel="noopener"
+                alt="go to Youtube"
+              >
                 <span className="sr-only">Opens new window</span>
                 <i className="fab fa-youtube fa-2x"></i>
               </a>
             </li>
             <li className="social-list__item">
-              <a href="http://instagram.com" aria-hidden="true" className="social-list__link" rel="noopener" alt="go to Instagram">
+              <a
+                href="http://instagram.com"
+                aria-hidden="true"
+                className="social-list__link"
+                rel="noopener"
+                alt="go to Instagram"
+              >
                 <span className="sr-only">Opens new window</span>
                 <i className="fab fa-instagram fa-2x"></i>
               </a>
