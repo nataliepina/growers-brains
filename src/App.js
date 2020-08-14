@@ -14,7 +14,7 @@ import Products from './screens/Products';
 import DailyGrow from './screens/DailyGrow';
 import Consulting from './screens/Dashboard';
 import GreenHouse from './screens/GreenHouse';
-import ErrorScreen from './screens/ErrorScreen';
+import Error from './screens/Error';
 
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -36,7 +36,7 @@ function App() {
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Landing} />
-        <Route path="/404" component={ErrorScreen} />
+        <Route path="/404" component={Error} />
         {/* If there are no route matches... */}
         <Redirect to="/404" />
       </Switch>

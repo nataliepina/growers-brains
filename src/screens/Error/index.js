@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-const ErrorScreen = () => (
+const Error = () => (
   <div id="error-screen-div">
     <h1 className="big-text">404</h1>
     <h2 className="small-text">Page not found</h2>
@@ -14,4 +14,4 @@ const ErrorScreen = () => (
   </div>
 );
 
-export default ErrorScreen;
+export default Error;
