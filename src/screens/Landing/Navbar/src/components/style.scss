@@ -1,0 +1,39 @@
+// @import '../../scss/variables';
+// @import '../../scss/_base';
+$primary-green-light: #57AF7E;
+$primary-green-dark: #224A34;
+$darkest-green: #191F1C;
+$lightest-green: #80B899;
+$black: #191F1C;
+$white: #ffffff;
+$l-heading: 3rem;
+$m-heading: 2rem;
+$paragraph: 1rem;
+$font-primary: 'Playfair Display', serif;
+$font-secondary: 'Roboto', sans-serif;
+
+
+.btn {
+    padding: 8px 20px;
+    margin: 0 5px 0 5px;
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $primary-green-light;
+    padding: 2px 2px;
+    transition: all 0.3s ease-out;
+    color: $primary-green-dark;
+    transition: 250ms;
+}
+.btn--medium {
+    background-color: $primary-green-light;
+    padding: 2px 2px;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 18%;
+    color: #fff;
+    border: none;
+}

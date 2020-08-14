@@ -1,0 +1,150 @@
+// @import '../../scss/variables';
+// @import '../../scss/_base';
+
+
+
+$primary-green-light: #57AF7E;
+$primary-green-dark: #224A34;
+$darkest-green: #191F1C;
+$lightest-green: #80B899;
+$black: #191F1C;
+$white: #ffffff;
+$l-heading: 3rem;
+$m-heading: 2rem;
+$paragraph: 1rem;
+$font-primary: 'Playfair Display', serif;
+$font-secondary: 'Roboto', sans-serif;
+
+.container {
+    background: #fff;
+    position: sticky;
+    top:0px;
+}
+.NavbarItems {
+    width: 85%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    color: #000;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.fa-react {
+    margin-left : 0.5rem;
+    font-size: 1.6rem;
+
+}
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 80vw;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.nav-links {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+.nav-links:hover {
+    background-color: $primary-green-light;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    color: #fff;
+}
+.fa-bars {
+    color: $primary-green-dark;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+.logo {
+    padding-top: 20px;
+    width: 180px;
+    margin-bottom: 18px;
+
+}
+.menu-icon {
+    display: none
+}
+
+.main {
+    height: 90vh;
+    
+}
+
+@media screen and (max-width: 970px) {
+    
+    .NavbarItems {
+        margin: 0;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background:#fff;
+        top: 90px;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .nav-links:hover {
+        background-color: $primary-green-dark;
+        border-radius: 0;
+        color: #fff;
+    }
+    .logo {
+        margin: 0 auto 0 0;
+    }
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .fa-times {
+        color: $primary-green-dark;
+        font-size: 2rem;
+    }
+    Button {
+        display: none;
+    }
+}
