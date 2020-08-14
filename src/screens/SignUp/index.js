@@ -7,7 +7,7 @@ const Signup = () => {
     name: "",
     email: "",
     password: "",
-    passwordConfirm: "",
+    confirmPassword: "",
     showPassword: false,
     showConfirmPassword: false,
   });
@@ -16,7 +16,7 @@ const Signup = () => {
     name,
     email,
     password,
-    passwordConfirm,
+    confirmPassword,
     showPassword,
     showConfirmPassword,
   } = user;
@@ -146,8 +146,8 @@ const Signup = () => {
           <div className="password-container">
             <input
               type={showConfirmPassword ? "text" : "password"}
-              name="passwordConfirm"
-              value={passwordConfirm}
+              name="confirmPassword"
+              value={confirmPassword}
               placeholder="Confirm Password"
               onChange={handleChange}
               required
