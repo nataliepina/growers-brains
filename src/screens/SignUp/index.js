@@ -8,8 +8,8 @@ const Signup = () => {
     email: "",
     password: "",
     passwordConfirm: "",
-    isPasswordShown: false,
-    isPasswordConfirmShown: false,
+    showPassword: false,
+    showConfirmPassword: false,
   });
 
   const {
@@ -17,8 +17,8 @@ const Signup = () => {
     email,
     password,
     passwordConfirm,
-    isPasswordShown,
-    isPasswordConfirmShown,
+    showPassword,
+    showConfirmPassword,
   } = user;
 
   const handleChange = (e) => {
@@ -30,11 +30,11 @@ const Signup = () => {
   };
 
   const togglePasswordVisibility = () => {
-    setUser({ ...user, isPasswordShown: !isPasswordShown });
+    setUser({ ...user, showPassword: !showPassword });
   };
 
   const togglePasswordConfirmVisibility = () => {
-    setUser({ ...user, isPasswordConfirmShown: !isPasswordConfirmShown });
+    setUser({ ...user, showConfirmPassword: !showConfirmPassword });
   };
 
   const passwordToggleEye = {
@@ -132,27 +132,27 @@ const Signup = () => {
           </div>
           <div className="password-container">
             <input
-              type={isPasswordShown ? "text" : "password"}
+              type={showPassword ? "text" : "password"}
               name="password"
               value={password}
               placeholder="Password"
               onChange={handleChange}
               required
             />
-            {isPasswordShown
+            {showPassword
               ? passwordToggleEye.toHidePassword
               : passwordToggleEye.toShowPassword}
           </div>
           <div className="password-container">
             <input
-              type={isPasswordConfirmShown ? "text" : "password"}
+              type={showConfirmPassword ? "text" : "password"}
               name="passwordConfirm"
               value={passwordConfirm}
               placeholder="Confirm Password"
               onChange={handleChange}
               required
             />
-            {isPasswordConfirmShown
+            {showConfirmPassword
               ? passwordToggleEye.toHideConfirmPassword
               : passwordToggleEye.toShowConfirmPassword}
           </div>
