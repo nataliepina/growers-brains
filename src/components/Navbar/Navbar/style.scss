@@ -31,6 +31,21 @@ $white: #ffffff;
     }
 }
 
+a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding-top: 22px;
+    width: 300px;
+    margin-bottom: 18px;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+    cursor: pointer;
+}
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(8, auto);
@@ -81,8 +96,10 @@ $white: #ffffff;
 @media screen and (max-width: 1200px) {
     
 .NavbarItems {
-    margin: 0;
+    margin-right: auto;
+    padding-left: 15px;
 }
+
 .nav-menu {
     display: flex;
     flex-direction: column;
@@ -120,9 +137,18 @@ $white: #ffffff;
 
 //Logo to be changed
     .logo {
-        margin: 0 auto 0 0;
+        margin: px;
         padding:0;
     }
+
+    a {
+        margin:0;
+        
+        &:visted{
+        margin:0;
+        }
+    }
+    
     // .navbar-logo {
     //     position: absolute;
     //     top: 0;

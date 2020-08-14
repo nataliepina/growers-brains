@@ -4,7 +4,7 @@ import { Button } from '../Button';
 import { Style } from './style.scss';
 import { Style2 } from '../style2.scss';
 import logo from './logo.png';
- 
+
 
 class Navbar extends Component {
     state = { clicked: false }
@@ -17,7 +17,7 @@ class Navbar extends Component {
         return (
             <header class="container">
                 <nav className="NavbarItems">
-                    {<img class="logo" src={logo} alt="logo"/> }
+                    {<a href="/"><img class="logo" src={logo} alt="logo" /></a>}
                     {/* {<h1 className="navbar-logo">Growers Brains</h1>} */}
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -34,10 +34,10 @@ class Navbar extends Component {
                             )
                         })}
                     </ul>
-                    <Button>Sign Up</Button>
-                    <Button>Sign In</Button>
+                    <a href="/login"><Button>Sign In</Button></a>
+                    <a href="/signup"><Button>Sign Up</Button></a>
                 </nav>
-                
+
             </header>
         )
     }

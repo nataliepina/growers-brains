@@ -3,25 +3,26 @@
 
 .btn {
     padding: 8px 20px;
-    margin: 0 5px 0 5px;
+    margin: 0 25px 0 35px;
     border-radius: 1px;
     outline: none;
     cursor: pointer;
 
     &:hover {
     background-color: $primary-green-light;
-    padding: 5px 2px;
+    padding: 5px 19px;
     transition: all 0.3s ease-out;
     color: $primary-green-dark;
     transition: 250ms;
+    width: 50%;
     }   
 
     &--medium {
     background-color: $primary-green-light;
-    padding: 5px 2px;
+    padding: 5px 19px;
     border-radius: 4px;
     font-size: 18px;
-    width: 18%;
+    width: 50%;
     color: #f4f4f5;
     border: none;
     }
