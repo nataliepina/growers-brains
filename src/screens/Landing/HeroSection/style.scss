@@ -42,6 +42,9 @@
       border-radius: 3px;
       background-color: $primary-green-dark;
     }
+    button:hover {
+      background-color: $darkest-green;
+    }
   }
   .right-branch {
     grid-area: right;
