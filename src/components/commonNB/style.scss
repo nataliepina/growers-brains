@@ -1,14 +1,7 @@
-@import '../../../scss/variables';
-@import '../../../scss/base';
+@import '../../scss/variables';
+@import '../../scss/base';
 
-$white: #ffffff;
-*,
-::before,
-::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 //Main header to be used for sticky if needed
 .container {
     display: flex;
@@ -21,7 +14,7 @@ $white: #ffffff;
     max-width: 100%;
     z-index: 10;
 
-    .NavbarItems {
+    .navbar-items {
         display: flex;
         width: 80%;
         height: 90px;
@@ -57,7 +50,7 @@ a:visited {
     margin-right: 2rem;
 }
 .nav-links {
-    color: #000;
+    color: $black;
     text-decoration: none;
     padding: 0.5rem 1rem;
 
@@ -78,24 +71,53 @@ a:visited {
     display: none
 }
 
-//Logo To be changed at later time
-// .navbar-logo {
-//     color: #000;
-//     justify-self: start;
-//     margin-left: 20px;
-//     cursor: pointer;
-// }
+
 .logo {
     padding-top: 22px;
     width: 180px;
     margin-bottom: 18px;
 }
 
+//Buttons
+
+.btn {
+    padding: 8px 20px;
+    margin: 0 25px 0 35px;
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+    background-color: $primary-green-light;
+    padding: 5px 19px;
+    transition: all 0.3s ease-out;
+    color: $primary-green-dark;
+    transition: 250ms;
+    width: 50%;
+    }   
+
+    &--medium {
+    background-color: $primary-green-light;
+    padding: 5px 19px;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 50%;
+    color: $white;
+    border: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .btn {
+        visibility: hidden;
+    }
+}
+
+
 
 //Media
 @media screen and (max-width: 1200px) {
     
-.NavbarItems {
+.navbar-items {
     margin-right: auto;
     padding-left: 15px;
 }
@@ -113,7 +135,7 @@ a:visited {
     transition: all 0.5s ease;
 
     &.active {
-        background:$white;
+        background: $white;
         top: 90px;
         left: 0;
         opacity: 1;
@@ -149,12 +171,6 @@ a:visited {
         }
     }
     
-    // .navbar-logo {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     transform: translate(25%, 50%);
-    // }
 
 //mobile
     .menu-icon {

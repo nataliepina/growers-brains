@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
-import { MenuItems } from "./MenuItems";
-import { Button } from '../Button';
-import { Style } from './style.scss';
-import { Style2 } from '../style2.scss';
+import { Button } from './Button';
+import './style.scss';
 import logo from './logo.png';
 
-
+const MenuItems = [
+    {
+        title: 'Daily Grow',
+        url: '#'
+    },
+    {
+        title: 'Products',
+        url: '#'
+    },
+    {
+        title: 'Consulting',
+        url: '#'
+    },
+    {
+        title: 'Green House',
+        url: '#'
+    },
+];
 class Navbar extends Component {
     state = { clicked: false }
-
+    
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
     }
@@ -16,9 +31,8 @@ class Navbar extends Component {
     render() {
         return (
             <header class="container">
-                <nav className="NavbarItems">
+                <nav className="navbar-items">
                     {<a href="/"><img class="logo" src={logo} alt="logo" /></a>}
-                    {/* {<h1 className="navbar-logo">Growers Brains</h1>} */}
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
 
@@ -27,7 +41,7 @@ class Navbar extends Component {
                         {MenuItems.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <a className={item.cName} href={item.url}>
+                                    <a className='nav-links' href={item.url}>
                                         {item.title}
                                     </a>
                                 </li>

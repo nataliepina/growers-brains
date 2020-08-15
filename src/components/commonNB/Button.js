@@ -1,5 +1,5 @@
-import React from 'react'
-import './style2.scss'
+import React from 'react';
+import './style.scss';
 
 const SIZES = [
     'btn--medium',
