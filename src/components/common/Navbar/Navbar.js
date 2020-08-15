@@ -6,19 +6,19 @@ import logo from './logo.png';
 const MenuItems = [
     {
         title: 'Daily Grow',
-        url: '#'
+        url: '/dailygrow'
     },
     {
         title: 'Products',
-        url: '#'
+        url: '/products'
     },
     {
         title: 'Consulting',
-        url: '#'
+        url: '/consulting'
     },
     {
         title: 'Green House',
-        url: '#'
+        url: '/greenhouse'
     },
 ];
 class Navbar extends Component {
