@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const Error = () => (
-  <div id="error-screen-div">
+  <div className="error-screen-div">
     <h1 className="big-text">404</h1>
     <h2 className="small-text">Page not found</h2>
     <button className="home-btn">
