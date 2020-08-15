@@ -3,7 +3,7 @@ import {
   Route,
   Switch,
   Redirect,
-  BrowserRouter as Router
+  BrowserRouter as Router,
 } from 'react-router-dom';
 
 import Landing from './screens/Landing';
@@ -14,6 +14,7 @@ import Products from './screens/Products';
 import DailyGrow from './screens/DailyGrow';
 import Consulting from './screens/Dashboard';
 import GreenHouse from './screens/GreenHouse';
+import Error from './screens/Error';
 
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -22,8 +23,8 @@ const privateRouteProps = [
   { path: '/products', component: Products },
   { path: '/dailygrow', component: DailyGrow },
   { path: '/consulting', component: Consulting },
-  { path: '/greenhouse', component: GreenHouse }
-]
+  { path: '/greenhouse', component: GreenHouse },
+];
 
 function App() {
   return (
@@ -35,8 +36,9 @@ function App() {
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/" component={Landing} />
+        <Route path="/404" component={Error} />
         {/* If there are no route matches... */}
-        <Redirect to="/" />
+        <Redirect to="/404" />
       </Switch>
     </Router>
   );
