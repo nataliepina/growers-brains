@@ -65,12 +65,12 @@ const sectionTwo = [
 export default () => {
 	return (
 		<>
-			<section id="sectionOne">
+			<section id='sectionOne'>
 				{sectionOne.map((item) => (
 					<SectionOneItem key={item.id} {...item} />
 				))}
 			</section>
-			<section id="sectionTwo" className="container">
+			<section id='sectionTwo' className='container'>
 				{sectionTwo.map((item) => (
 					<SectionTwoItem key={item.id} {...item} />
 				))}
@@ -81,28 +81,28 @@ export default () => {
 
 const SectionOneItem = ({ title, description, imageUrl }) => (
 	<div
-		className="sectionOne-item"
+		className='sectionOne-item'
 		style={{ backgroundImage: `url(${imageUrl})` }}
 	>
-		<div className="card">
-			<div className="content-container">
-				<h2 className="title">{title}</h2>
-				<p className="description">{description}</p>
-				<a href="#link" className="link">{`Learn More \u2192`}</a>
+		<div className='card'>
+			<div className='content-container'>
+				<h2 className='title'>{title}</h2>
+				<p className='description'>{description}</p>
+				<a href='#link' className='link'>{`Learn More \u2192`}</a>
 			</div>
 		</div>
 	</div>
 );
 
 const SectionTwoItem = ({ title, description, imageUrl, base64 }) => (
-	<div className="sectionTwo-item">
-		<div className="imgContainer">
-			<div className="border" />
-			<BlurImage src={imageUrl} base64={base64} alt="test" />
+	<div className='sectionTwo-item'>
+		<div className='imgContainer'>
+			<div className='border' />
+			<BlurImage src={imageUrl} base64={base64} alt='test' />
 		</div>
-		<div className="content-container">
-			<h2 className="title">{title}</h2>
-			<p className="description">{description}</p>
+		<div className='content-container'>
+			<h2 className='title'>{title}</h2>
+			<p className='description'>{description}</p>
 		</div>
 	</div>
 );
