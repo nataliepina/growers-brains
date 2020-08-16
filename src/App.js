@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Route,
-  Switch,
-  Redirect,
-  BrowserRouter as Router,
-} from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
 import Landing from './screens/Landing';
 import Login from './screens/Login';
@@ -23,7 +18,7 @@ const privateRouteProps = [
   { path: '/products', component: Products },
   { path: '/dailygrow', component: DailyGrow },
   { path: '/consulting', component: Consulting },
-  { path: '/greenhouse', component: GreenHouse },
+  { path: '/greenhouse', component: GreenHouse }
 ];
 
 function App() {
@@ -33,12 +28,11 @@ function App() {
         {privateRouteProps.map((props) => (
           <ProtectedRoute {...props} key={props.path} />
         ))}
-        <Route exact path="/signup" component={SignUp} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/" component={Landing} />
-        <Route path="/404" component={Error} />
+        <Route exact path='/signup' component={SignUp} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/' component={Landing} />
         {/* If there are no route matches... */}
-        <Redirect to="/404" />
+        <Route path='/*' component={Error} />
       </Switch>
     </Router>
   );
