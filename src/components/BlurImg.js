@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 // takes the src as an argument and return a promise with the actual image
 const preloadImagesWithPromise = (src) => {
