@@ -1,0 +1,32 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:import/errors",
+		"plugin:react/recommended",
+		"prettier",
+		"prettier/react"
+	],
+	"plugins": ["react", "import", "react-hooks"],
+	"rules": {
+		"react/prop-types": "off",
+		"no-console": "warn",
+		"react-hooks/rules-of-hooks": "error"
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}
