@@ -1,0 +1,35 @@
+@import "../../scss/variables";
+@import "../../scss/_base";
+
+.error-screen-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .big-text {
+    font-size: 150px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: #80b899;
+  }
+
+  .small-text {
+    color: #80b899;
+    margin: 10px;
+  }
+
+  .home-btn {
+    margin: 10px 10px;
+    width: 120px;
+    height: 30px;
+    background-color: #80b899;
+    border-radius: 15px;
+    border: thin;
+  }
+
+  .home-link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}

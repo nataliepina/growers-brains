@@ -5,13 +5,14 @@ import Footer from '../../components/common/Footer';
 import Navbar from '../../components/commonNB/Navbar';
 
 const Dashboard = () => {
+
   return (
-    <>
+    <React.Fragment>
       <Navbar />
       <InfoSection />
       <Subscribe />
       <Footer />
-    </>
+    </React.Fragment>
   );
 }
 
