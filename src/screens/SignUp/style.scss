@@ -1,5 +1,5 @@
-@import '../../scss/variables';
-@import '../../scss/_base';
+@import "../../scss/variables";
+@import "../../scss/_base";
 
 img {
   display: block;
@@ -39,6 +39,17 @@ input {
   color: $lightest-green;
   border: 1px solid $lightest-green;
   outline: none;
+}
+
+.password-container {
+  position: relative;
+}
+.password-toggle {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  cursor: pointer;
+  fill: gray;
 }
 
 .btn {

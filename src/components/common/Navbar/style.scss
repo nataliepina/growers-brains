@@ -15,7 +15,7 @@
 
     .navbar-items {
         display: flex;
-        width: 80%;
+        width: 91%;
         height: 90px;
         justify-content: center;
         align-items: center;
@@ -40,18 +40,17 @@ a:visited {
 }
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(8, auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1em;
     list-style: none;
     text-align: center;
     width: 80vw;
     justify-content: center;
-    margin-right: 2rem;
+    margin-right: 2em;
 }
 .nav-links {
     color: $black;
     text-decoration: none;
-    padding: 0.5rem 1rem;
 
     &:hover {
      color: $primary-green-light;
@@ -71,10 +70,12 @@ a:visited {
 }
 
 
-.logo {
+.nav-logo {
     padding-top: 22px;
-    width: 180px;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 18px;
+    min-width: 150px;
 }
 
 //Buttons
@@ -105,7 +106,7 @@ a:visited {
     border: none;
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 786px) {
     .nav-btn {
         visibility: hidden;
     }
@@ -114,24 +115,29 @@ a:visited {
 
 
 //Media
-@media screen and (max-width: 1200px) {
-    
-.navbar-items {
-    margin-right: auto;
-    padding-left: 15px;
-}
+@media screen and (max-width: 768px) {
+.nav-container {
+    position: relative;
 
+    .navbar-items {
+        margin-right: auto;
+        padding-left: 15px;
+    }
+}
+    
 .nav-menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
-    height: 480px;
+    height: 420px;
     position: absolute;
     top: 0;
     left: -100%;
     opacity: 1;
+    padding: 5px 4px;
     transition: all 0.5s ease;
+    
 
     &.active {
         background: $white;
@@ -140,11 +146,18 @@ a:visited {
         opacity: 1;
         transition: all 0.8s ease;
         z-index: 1;
+        
     }
+    
 }
+
+.nav-item {
+    margin: 0 1em;
+}
+
 .nav-links {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1.8rem 0;
     width: 100%;
     display: table;
 
@@ -154,12 +167,14 @@ a:visited {
         color: $white;
         opacity: .8;
     }
+    
 }
 
 //Logo to be changed
-    .logo {
-        margin: px;
-        padding:0;
+    .nav-logo {
+        margin-bottom: 60px;
+        padding-left: 10px;
+        min-width: 100px;
     }
 
     a {
@@ -185,7 +200,7 @@ a:visited {
         color: $primary-green-dark;
         font-size: 2rem;
     }
-    .btn-nav {
+    .nav-btn {
         display: none;
     }
 }
