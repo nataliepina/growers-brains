@@ -30,7 +30,7 @@ class Navbar extends Component {
 
     render() {
         return (
-            <header class="container">
+            <header class="nav-container">
                 <nav className="navbar-items">
                     {<a href="/"><img class="logo" src={logo} alt="logo" /></a>}
                     <div className="menu-icon" onClick={this.handleClick}>

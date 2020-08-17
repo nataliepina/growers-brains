@@ -2,7 +2,7 @@
 @import "../../../scss/base";
 
 //Main header to be used for sticky if needed
-.container {
+.nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +79,7 @@ a:visited {
 
 //Buttons
 
-.btn {
+.nav-btn {
     padding: 8px 20px;
     margin: 0 25px 0 35px;
     border-radius: 1px;
@@ -106,7 +106,7 @@ a:visited {
     }
 }
 @media screen and (max-width: 1200px) {
-    .btn {
+    .nav-btn {
         visibility: hidden;
     }
 }
@@ -185,7 +185,7 @@ a:visited {
         color: $primary-green-dark;
         font-size: 2rem;
     }
-    Button {
+    .btn-nav {
         display: none;
     }
 }

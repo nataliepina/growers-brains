@@ -2,8 +2,8 @@ import React from 'react';
 import './style.scss';
 
 const SIZES = [
-    'btn--medium',
-    'btn--large'
+    'nav-btn--medium',
+    'nav-btn--large'
 ]
 
 export const Button = ({
@@ -12,7 +12,7 @@ export const Button = ({
     onClick,
 }) => {
     const checkButtonSize = SIZES[0];
-    return (<button className={`btn ${checkButtonSize} `} onClick={onClick} type={type}>
+    return (<button className={`nav-btn ${checkButtonSize}`} onClick={onClick} type={type}>
         {children}
     </button>)
 }
