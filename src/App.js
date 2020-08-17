@@ -1,14 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import {
-	Route,
-	Switch,
-	Redirect,
-	BrowserRouter as Router,
-} from 'react-router-dom';
-=======
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
->>>>>>> 3d25876... Add 404 route for all pages that do not exist
 
 import Landing from './screens/Landing';
 import Login from './screens/Login';
@@ -23,28 +14,28 @@ import Error from './screens/Error';
 import ProtectedRoute from './components/ProtectedRoute';
 
 const privateRouteProps = [
-  { path: '/dashboard', component: Dashboard, exact: true },
-  { path: '/products', component: Products },
-  { path: '/dailygrow', component: DailyGrow },
-  { path: '/consulting', component: Consulting },
-  { path: '/greenhouse', component: GreenHouse }
+	{ path: '/dashboard', component: Dashboard, exact: true },
+	{ path: '/products', component: Products },
+	{ path: '/dailygrow', component: DailyGrow },
+	{ path: '/consulting', component: Consulting },
+	{ path: '/greenhouse', component: GreenHouse },
 ];
 
 function App() {
-  return (
-    <Router>
-      <Switch>
-        {privateRouteProps.map((props) => (
-          <ProtectedRoute {...props} key={props.path} />
-        ))}
-        <Route exact path='/signup' component={SignUp} />
-        <Route exact path='/login' component={Login} />
-        <Route exact path='/' component={Landing} />
-        {/* If there are no route matches... */}
-        <Route path='/*' component={Error} />
-      </Switch>
-    </Router>
-  );
+	return (
+		<Router>
+			<Switch>
+				{privateRouteProps.map((props) => (
+					<ProtectedRoute {...props} key={props.path} />
+				))}
+				<Route exact path='/signup' component={SignUp} />
+				<Route exact path='/login' component={Login} />
+				<Route exact path='/' component={Landing} />
+				{/* If there are no route matches... */}
+				<Route path='/*' component={Error} />
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
