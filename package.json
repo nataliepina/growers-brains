@@ -21,7 +21,7 @@
 		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"build:local": "env-cmd -f .env.local npm run start",
+		"start:local": "env-cmd -f .env.local npm run start",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"format": "prettier \"src/**/*.{js, scss}\" --write",
