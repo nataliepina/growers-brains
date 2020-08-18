@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #191f1c;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  max-width: 960px;
+  margin: 3em auto;
+}
+
+form > h1 {
+  margin-bottom: 0.5em;
+}
+
+.form-container {
+  border: 2px solid #80b899;
+  overflow: hidden;
+  padding: 0 2em;
+}
+
+.form-group {
+  width: 80%;
+  max-width: 350px;
+  margin: 2rem auto;
+}
+
+input {
+  width: 100%;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1em;
+  margin-bottom: 0.75em;
+  color: #80b899;
+  border: 1px solid #80b899;
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  cursor: pointer;
+  fill: gray;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn-dark {
+  background: #224a34;
+  color: #ffffff;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #224a34;
+  border: 1px solid #224a34;
+}
+
+.signup-text {
+  color: #224a34;
+}
+
+::-webkit-input-placeholder {
+  color: #224a34;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #224a34;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #224a34;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #224a34;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

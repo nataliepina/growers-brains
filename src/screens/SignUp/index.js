@@ -3,7 +3,6 @@ import "./style.scss";
 import plantImg from "./assets/growing.jpg";
 
 const Signup = () => {
-<<<<<<< HEAD
   const [user, setUser] = useState({
     name: "",
     email: "",
@@ -21,16 +20,6 @@ const Signup = () => {
     showPassword,
     showConfirmPassword,
   } = user;
-=======
-	const [user, setUser] = useState({
-		name: '',
-		email: '',
-		password: '',
-		passwordConfirm: '',
-	});
-
-	const { name, email, password, passwordConfirm } = user;
->>>>>>> b296511... updated formatting for source files
 
 	const handleChange = (e) => {
 		setUser({ ...user, [e.target.name]: e.target.value });
@@ -40,7 +29,6 @@ const Signup = () => {
 		e.preventDefault();
 	};
 
-<<<<<<< HEAD
   const togglePasswordVisibility = () => {
     setUser({ ...user, showPassword: !showPassword });
   };
@@ -182,70 +170,6 @@ const Signup = () => {
       </div>
     </div>
   );
-=======
-	return (
-		<div className='grid-container'>
-			<div className='image-container'>
-				<img src={plantImg} alt='growing plants' />
-			</div>
-			<div className='form-container'>
-				<form className='form-group' onSubmit={handleSubmit}>
-					<h1 className='title'>Sign Up</h1>
-					<div>
-						<input
-							type='text'
-							name='name'
-							value={name}
-							placeholder='Display Name'
-							onChange={handleChange}
-							required
-						/>
-					</div>
-					<div>
-						<input
-							type='email'
-							name='email'
-							value={email}
-							placeholder='Email'
-							onChange={handleChange}
-							required
-						/>
-					</div>
-					<div>
-						<input
-							type='password'
-							name='password'
-							value={password}
-							placeholder='Password'
-							onChange={handleChange}
-							required
-						/>
-					</div>
-					<div>
-						<input
-							type='password'
-							name='passwordConfirm'
-							value={passwordConfirm}
-							placeholder='Confirm Password'
-							onChange={handleChange}
-							required
-						/>
-					</div>
-					<input className='btn btn-dark' type='submit' value='Start Grow!' />
-					<label className='signup-text' htmlFor='sign in'>
-						Already have an account?
-					</label>
-					<input
-						className='btn btn-light'
-						type='submit'
-						name='sign in'
-						value='Sign In'
-					/>
-				</form>
-			</div>
-		</div>
-	);
->>>>>>> b296511... updated formatting for source files
 };
 
 export default Signup;
