@@ -22,3 +22,33 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-primary, sans-serif;
 }
+
+
+// Scroll Bar
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #80B899;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #224A34;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #191F1C;
+}
+
+// text Selection
+::-moz-selection {
+    color: #fff;
+    background: #57AF7E;
+  }
+  
+::selection {
+    color: #fff;
+    background: #57AF7E;
+}
