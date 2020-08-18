@@ -32,4 +32,5 @@ GrowersBrains is an app designed to solve the problems that growers are globally
 ### How To Run
 - Clone or fork the repository
 - Install dependencies with NPM `npm i`
+- Create a file named `.env.local` at the root of the project, and add this line to it: `PUBLIC_URL=/`
 - Start the project locally `npm start`
