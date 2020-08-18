@@ -8,7 +8,7 @@ import {
 
 import Landing from './screens/Landing';
 import Login from './screens/Login';
-import SignUp from './screens/SignUp';
+// import SignUp from './screens/SignUp';
 import Dashboard from './screens/Dashboard';
 import Products from './screens/Products';
 import DailyGrow from './screens/DailyGrow';
@@ -33,7 +33,7 @@ function App() {
 				{privateRouteProps.map((props) => (
 					<ProtectedRoute {...props} key={props.path} />
 				))}
-				<Route exact path='/signup' component={SignUp} />
+				{/* <Route exact path='/signup' component={SignUp} /> */}
 				<Route exact path='/login' component={Login} />
 				<Route exact path='/' component={Landing} />
 				<Route path='/404' component={Error} />
