@@ -21,13 +21,13 @@ const Signup = () => {
     showConfirmPassword,
   } = user;
 
-  const handleChange = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
-  };
+	const handleChange = (e) => {
+		setUser({ ...user, [e.target.name]: e.target.value });
+	};
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+	const handleSubmit = (e) => {
+		e.preventDefault();
+	};
 
   const togglePasswordVisibility = () => {
     setUser({ ...user, showPassword: !showPassword });
