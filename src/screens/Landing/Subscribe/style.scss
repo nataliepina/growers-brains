@@ -13,17 +13,19 @@
     left: 9rem;
     display: flex;
     flex-direction: column;
+    margin: 0;
 
     .title {
       font-size: 2.5rem;
       font-family: $font-primary;
+      text-align: center;
     }
 
     .input-container {
       display: flex;
       margin-top: 2rem;
       max-width: 35rem;
-      border: 2.5px solid $primary-green-dark;
+      border: 3px solid $primary-green-dark;
 
       .input-email {
         flex: 3;
@@ -31,6 +33,7 @@
         border: none;
         color: $primary-green-dark;
         font-size: 1.1rem;
+        margin: 0;
       }
 
       .subscribe-btn {
