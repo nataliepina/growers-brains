@@ -3,7 +3,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
 import Landing from './screens/Landing';
 import Login from './screens/Login';
-import SignUp from './screens/SignUp';
+// import SignUp from './screens/SignUp';
 import Dashboard from './screens/Dashboard';
 import Products from './screens/Products';
 import DailyGrow from './screens/DailyGrow';
