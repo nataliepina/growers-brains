@@ -1,0 +1,111 @@
+.row{
+    width: 100%;
+}
+
+.basic-info{
+    height: 320px;
+    position: relative;
+}
+
+.userpage{
+    font-size: 1.8em;
+    line-height: 3.6em;
+    position: absolute;
+    top:30px;
+    left:8%;
+    color: #224431;
+}
+
+.user-name{
+    position: absolute;
+    left: 8%;
+    top: 120px;
+    color: #224431;
+    font-size: 3em;
+    width:300px;
+    display:block;
+}
+
+.user-addr{
+    position: absolute;
+    left: 8%;
+    top: 280px;
+    color: #224431;
+}
+
+.info-bottom{
+    height: 280px;
+    position: relative;
+    background-color: #8BC8A6;
+}
+
+.tags{
+    position: absolute;
+    left:2%;
+    top:40px;
+    max-width: 40%;
+}
+
+.tags-header, .social-header, .bio-header{
+    font-size: 1.2em;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #224431;
+}
+
+.tag-list{
+    margin-top:16px;
+    display:flex;
+    align-items: center;
+    gap:1em;
+}
+
+.social-list{
+    margin-top:16px;
+    display:flex;
+    align-items: center;
+    gap:1em;
+
+    a{
+        padding-top: 0;
+
+        i {
+            font-size: 1.5em;
+        }
+    }
+
+}
+
+.tag{
+    border: 3px solid #743759;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding:3px 10px;
+    color: #743759;
+
+}
+
+.socials{
+    position: absolute;
+    left:2%;
+    top:160px;
+    max-width: 20%;
+}
+
+
+.biography{
+    position: absolute;
+    left:40%;
+    top:160px;
+    max-width: 55%;
+}
+
+.bio-text{
+    box-sizing: border-box;
+    margin-top: 16px;
+    padding: 10px;
+    background: white;
+    font-size: 1.2em;
+    color: #224431;
+    font-family: Roboto, sans-serif;
+}
