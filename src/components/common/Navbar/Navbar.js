@@ -42,9 +42,9 @@ class Navbar extends Component {
                         {MenuItems.map((item, index) => {
                             return (
                                 <li className='nav-item' key={index}>
-                                    {<Link className='nav-links' to={item.url}>
+                                    <Link className='nav-links' to={item.url}>
                                         {item.title}
-                                    </Link>}
+                                    </Link>
                                 </li>
                             )
                         })}
