@@ -10,6 +10,7 @@ import DailyGrow from './screens/DailyGrow';
 import Consulting from './screens/Dashboard';
 import GreenHouse from './screens/GreenHouse';
 import Error from './screens/Error';
+import Profile from "./screens/Profile"
 
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -30,6 +31,7 @@ function App() {
         ))}
         <Route exact path='/signup' component={SignUp} />
         <Route exact path='/login' component={Login} />
+        <Route exact path='/profile' component={Profile} />
         <Route exact path='/' component={Landing} />
         {/* If there are no route matches... */}
         <Route path='/*' component={Error} />
