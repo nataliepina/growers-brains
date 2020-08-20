@@ -31,6 +31,7 @@ function App() {
         <Route exact path='/signup' component={SignUp} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/' component={Landing} />
+        <Route exact path='./screens/Products' component={Products} />
         {/* If there are no route matches... */}
         <Route path='/*' component={Error} />
       </Switch>
