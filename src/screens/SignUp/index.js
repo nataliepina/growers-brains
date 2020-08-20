@@ -26,7 +26,8 @@ const Signup = () => {
 	};
 
 	const handleSubmit = (e) => {
-		e.preventDefault();
+    e.preventDefault();
+//     console.log(user)
 	};
 
   const togglePasswordVisibility = () => {
